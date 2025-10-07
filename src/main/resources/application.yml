@@ -1,0 +1,19 @@
+server:
+  port: 2991
+
+spring:
+  profiles:
+    active: prod
+  application:
+    name: rempms-message-service
+
+  cloud:
+    openfeign:
+      okhttp:
+        enabled: true
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud: DEBUG
