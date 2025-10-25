@@ -17,4 +17,5 @@ public class EmailRequestDTO {
     private String subject;
     private String body;
     private String scheduleDateTime;
+    private Boolean isHtml;
 }

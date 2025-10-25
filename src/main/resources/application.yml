@@ -5,7 +5,22 @@ spring:
   profiles:
     active: prod
   application:
-    name: rempms-message-service
+    name: message-service
+
+  mail:
+    host: smtp.gmail.com
+    port: 587 # Use port 587 (TLS) — not 465 (SSL).
+    username: pixelhireusers587.noreply@gmail.com
+    password: luow rdqa yztm dufe
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
 
   cloud:
     openfeign:
